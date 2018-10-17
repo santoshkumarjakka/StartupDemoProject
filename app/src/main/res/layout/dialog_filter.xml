@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/tvTitle"
+        android:gravity="center"
+        android:drawableRight="@drawable/ic_cancel_black_24dp"
+        android:drawableEnd="@drawable/ic_cancel_black_24dp"
+        android:drawablePadding="8dp"
+        android:padding="4dp"
+        android:text="@string/filter_product_list"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/sort_by_Brands"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <com.example.demo.custom.MultiSelectionSpinner
+        android:id="@+id/mySpinner"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:padding="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:ems="10"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="@string/sort_by_Price"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:clipChildren="false">
+
+        <com.example.demo.custom.RangeSeekbar
+            android:id="@+id/rangeSeekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_color="#8990C4"
+            app:bar_highlight_color="#2434AD"
+            app:corner_radius="10"
+
+            app:data_type="_integer"
+            app:left_thumb_color="#1A246D"
+            app:left_thumb_color_pressed="#030B47"
+            app:right_thumb_color="#1A246D"
+            app:right_thumb_color_pressed="#030B47"
+            app:seek_bar_touch_enabled="true"
+            app:position="left" />
+
+        <TextView
+            android:id="@+id/textMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rangeSeekbar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textMax"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/rangeSeekbar"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:text="@string/refresh"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="4dp"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:text="@string/submit"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+</LinearLayout>

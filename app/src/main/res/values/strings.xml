@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SantoshDemoApp</string>
+    <string name="recall_api">Retry</string>
+    <string name="error_msg">Sorry Something went wrong</string>
+    <string name="submit">Submit</string>
+    <string name="filter">Filter</string>
+    <string name="filter_product_list">Filter Product List</string>
+    <string name="sort_by_Brands">Sort By Brands</string>
+    <string name="sort_by_Price">Sort By Price</string>
+    <string name="refresh">Refresh</string>
+    <string name="no_data_found">Product Not Found</string>
+    <string name="product_name">Product Name</string>
+    <string name="product_brand">Brand</string>
+    <string name="product_price">Selling Price</string>
+    <string name="more_image">Do You Want to add more images</string>
+    <string name="add_product">Add Product</string>
+</resources>
